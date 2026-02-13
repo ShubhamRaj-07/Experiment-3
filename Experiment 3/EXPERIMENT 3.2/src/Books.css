@@ -1,0 +1,155 @@
+.books-app {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.books-app h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+    color: #1a1a1a;
+    letter-spacing: -0.025em;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #374151;
+}
+
+.search-input:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: -1px;
+}
+
+.input-row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #374151;
+}
+
+.input:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: -1px;
+}
+
+.add-btn {
+    padding: 0.75rem 1.75rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.add-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.list-wrapper {
+    margin-top: 0.5rem;
+}
+
+.list-wrapper h3 {
+    display: none;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.book-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.book-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.book-author {
+    font-size: 1rem;
+    color: #4b5563;
+    margin: 0;
+}
+
+.remove-btn {
+    padding: 0.5rem 1rem;
+    background-color: #dc2626;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.remove-btn:hover {
+    background-color: #b91c1c;
+}
+
+.no-books {
+    text-align: center;
+    color: #6b7280;
+    padding: 2rem;
+    background: white;
+    border: 1px dashed #d1d5db;
+    border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+    .input-row {
+        flex-direction: column;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+}
